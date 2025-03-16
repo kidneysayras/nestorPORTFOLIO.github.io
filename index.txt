@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<head>
+    <title>E-PORTFOLIO 4TH QUARTER</title>
+    <link rel="icon" type="image/x-icon" href="music.ico">
+    <style>
+        @font-face {
+            font-family: 'VCR';
+            src: url('VCR.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100%;
+            font-family: 'VCR', sans-serif;
+            color: #000;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f5e9b5;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #e0d7a5;
+            color: #000;
+        }
+        .actimg
+        {
+            width: 300px;
+            height: auto;
+        }
+        /* ===== OVERLAY STYLES ===== */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            transition: opacity 0.5s ease;
+        }
+
+        #title-text {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+            position: relative;
+            top: -50px;
+            animation: float 3s infinite ease-in-out;
+            transition: transform 0.7s ease, opacity 0.5s ease;
+            text-transform: uppercase;
+        }
+
+        #computer {
+            width: 400px;
+            cursor: pointer;
+            animation: float 3s infinite ease-in-out;
+            transition: transform 0.7s ease, opacity 0.5s ease;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Zoom and fade-out effect */
+        .zoom-in #computer,
+        .zoom-in #title-text {
+            transform: scale(3);
+            opacity: 0;
+        }
+
+        /* Show menu and content after animation */
+        .show-content #overlay {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .show-content #content {
+            display: block;
+        }
+
+        .show-content .menu {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* ===== SECTION STYLES ===== */
+        section {
+            padding: 100px 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        #home {
+            background-color: #fdf5d4;
+        }
+
+        #about {
+            background-color: #fbe4e4;
+        }
+
+        #activities {
+            background-color: #e7f5e5;
+        }
+
+        #lessons {
+            background-color: #e5f0fb;
+        }
+
+        #reflections {
+            background-color: #f5e5fb;
+        }
+        ul {
+
+    padding-left: 20px; 
+    margin-left: 0; 
+    list-style-position: inside; 
+        }
+
+       li {
+    margin: 0;
+    padding: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <img src="music.ico">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#activities">Activities</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#reflections">Reflections</a>
+    </div>
+
+    <div id="overlay">
+        <div id="title-text">4TH QUARTER E-PORTFOLIO <br> OF NESTOR "THIRDY" PASTOR III</div>
+        <img src="computer.jpg" alt="Computer" id="computer" />
+    </div>
+
+    <section id="home">
+        <h1 >WELCOME TO MY 4TH QUARTER E-PORTFOLIO.</h1>
+        <p>This electronic portfolio is about me, my experiences in the activities in school, <br> the lessons in ICT and their applications and finally, <br> the reflection for this quarter and also the school year. <br> <br>
+        There are applications of only 4th QUARTER lessons seen <br> in the section of the website <a href=#lessons> here. </a> </p> <br> <br>
+        <h1>PREVIOUS E-PORTFOLIOS</h1>
+        <p><a href="https://kidneysayras.github.io/" target="_blank">1ST QUARTER</a></p>
+        <p><a href=https://kidneysayras.github.io/thirdy.github.io/index.html target="_blank"> 2ND QUARTER </a></p>
+    </section>
+
+    <section id="about">
+        <h1>ABOUT ME</h1>
+        <p>Here's a brief introduction about myself: <br>
+        I'm Nestor L. Pastor III, from 9 - Family. <br>
+    I'm turning 15 this year in May. <br>
+   I'd say I'm not that smart, but if I put effort into my work, it'll turn out better. <i> (but i don't) </i> </p> <br> <br> <br>
+   <h2> THINGS I LIKE: </h2>
+   <p>
+    <ul>
+        <li>Listening to music</li>
+        <li>Making music <br>
+       <i> here's one:</i> <br>
+       <audio controls src=SYMPHONY.mp3></audio></li>
+        <li>Playing games</li>
+        <li>Being with my friends</li>
+        <li>Eating</li>
+        <li>Sleeping</li>
+    </ul>
+   </p>
+    </section>
+
+    <section id="activities">
+        <h1>ACTIVITIES</h1>
+        <p>Here are some of the activities that happened in the 4TH quarter:</p>
+        
+        <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+            <tr>
+                <th style="padding: 10px; background-color: #9bbe9e; border: 1px solid #ccc;">Activity</th>
+                <th style="padding: 10px; background-color: #9bbe9e; border: 1px solid #ccc;">Description</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ccc;"><b>BATTLE OF THE BANDS 2025</b> <br> <br>
+                    <img src="SINGKW.jpg" class="actimg">
+                    <br>
+                    <video src="SINGKW.mp4" class="actimg" controls></video>
+                </td>
+                <td style="padding: 10px; border: 1px solid #ccc;">This is the BOTB 2025 where my band, SINGKWENTA, was crowned champion of the event.<br>
+                     It was such a fun experience and the preparation and call time of the event was wholesome. <br> 
+                     I'd like to say that winning made it worth the hardship and sacrifice our band took during practices.</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ccc;"><b>STREET-DANCE COMPETITION</b><br> <br>
+                <img src="street.png" class="actimg"></td>
+                <td style="padding: 10px; border: 1px solid #ccc;">This is the Street Dance Competition of 2025, the video shows <br> 
+                    The performance of APEX, Family and Faith merged to present their awesome dance moves. APEX won 1st Runner up./td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ccc;"><b>ONE-ACT PLAY (PRACTICE)</b> <br> <br>
+                    <img src="caleb.jpg" class="actimg"> <br>
+                    <video controls src="caleb.mp4" class="actimg" autoplay></video>
+                </td>
+                <td style="padding: 10px; border: 1px solid #ccc;">I'm the Technical Director for this play. <br> Our play is called "Silenced in the '60s" which is about <br>
+                Women's Rights and Rebellion against Domestic Abuse. <br> These medias are from Saturday, at BFRV Park, <br>
+                I took the photo and the video, the practice is where we rehearsed scenes on the play in comfortable clothes.</td>
+            </tr>
+        </table>
+    </section>
+    
+
+    <section id="lessons">
+        <h1 style="color: #4a6484;">Lessons</h1>
+        <p>These are the lessons I've learned throughout the quarter.</p>
+        
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <th style="background-color: #4a6484; color: white; padding: 10px;">Lesson</th>
+                <th style="background-color: #4a6484; color: white; padding: 10px;">Description</th>
+                <th style="background-color: #4a6484; color: white; padding: 10px;">Date</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">LESSON 1</td>
+                <td style="padding: 10px;">Lesson 1 is all about Events and types of PopUp boxes according to the PPTs. </td>
+                <td style="padding: 10px;">
+                    <img src="l1code.png" class="actimg"> <br>
+                    <video controls src="l1.mp4" class="actimg">
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Lesson 2</td>
+                <td style="padding: 10px;">Lesson 2 is all about Conditions, Controls and somewhat Loops (according to the PPT)</td>
+                <td style="padding: 10px;">
+                    <img src="l2codee.png" class="actimg"> <br>
+                    <img src="l2code.png" class="actimg">
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Lesson 3</td>
+                <td style="padding: 10px;">Lesson 3 is an extension of Lesson 2 which includes <br>
+                Return statements, switch statements and significance of functions. </td>
+                <td style="padding: 10px;">
+                    <img src="l3code.png" class="actimg"> <br>
+                    <video controls src="l3.mp4" class="actimg"></video>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Lesson 4</td>
+                <td style="padding: 10px;">Lesson 4 is all about loops.</td>
+                <td style="padding: 10px;">
+                    <img src="l4code.png" class="actimg">
+                    <img src="resultl4.png" width="100px" height="auto">
+                </td>
+            </tr>
+        </table>
+    </section>
+    
+
+    <section id="reflections">
+        <h1>Reflections</h1>
+        <p>Here are my thoughts and reflections on my experiences:</p>
+        </p> <br>
+        <p>My Grade 9 experience was full of challenges and learning. I faced some tough moments, but they helped me become stronger and more focused. <br>
+         In the 4th quarter, I learned a lot in ICT, especially about coding and javascript. Creating my E-Portfolio taught me to be creative and careful with details. <br>
+         Fixing coding errors was hard, but it felt great when I solved them. Working with classmates on school activities made school more fun and improved my teamwork and faithfulness in others. <br>
+         ICT also helped me think more critically and solve problems better. Grade 9 also taught me how to communicate better and build stronger friendships. <br>
+         I learned that school isn’t just about grades but also about improving myself. The lessons I learned this year will help me in the future.</p>
+    </section>
+
+    <script>
+        document.getElementById('computer').addEventListener('click', () => {
+            document.getElementById('computer').classList.add('zoom-in');
+            document.getElementById('title-text').classList.add('zoom-in');
+            
+            setTimeout(() => {
+                document.body.classList.add('show-content');
+            }, 700);
+        });
+    </script>
+    
+</body>
+</html>
